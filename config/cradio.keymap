@@ -136,7 +136,7 @@
             bindings = <
 &trans     &trans  &trans    &trans         &trans    &trans    &kp LS(NUBS)  &kp EXCL    &trans        &trans
 &kp EQUAL  &trans  &kp BSLH  &kp LS(COMMA)  &trans    &kp LPAR  &kp LS(FSLH)  &trans      &kp RA(NUBS)  &trans
-&sl 4      &kp Z   &trans    &kp COMMA      &trans    &trans    &kp RA(N0)    &kp RA(N9)  &hat          &trans
+&sl 4      &trans  &trans    &kp COMMA      &trans    &trans    &kp RA(N0)    &kp RA(N9)  &hat          &trans
                              &trans         &trans    &trans    &trans
             >;
         };
@@ -144,7 +144,7 @@
         number_navigation_layer {
             bindings = <
 &trans  &kp N1  &kp N2  &kp N3  &trans    &trans   &kp PG_DN     &kp UARW      &kp PG_UP  &trans
-&trans  &kp N4  &kp N5  &kp N6  &kp N0    &kp END  &kp LARW      &kp DARW      &kp RARW   &kp K_FORWARD
+&kp N0  &kp N4  &kp N5  &kp N6  &kp N0    &kp END  &kp LARW      &kp DARW      &kp RARW   &kp K_FORWARD
 &trans  &kp N7  &kp N8  &kp N9  &trans    &trans   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP   &trans
                         &trans  &trans    &trans   &trans
             >;
