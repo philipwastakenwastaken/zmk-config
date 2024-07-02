@@ -33,6 +33,30 @@
             quick-release;
             ignore-modifiers;
         };
+
+        EAE_behavior: EAE_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "EAE_BEHAVIOR";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&kp E>, <&kp SEMICOLON>;
+        };
+
+        OOE_behavior: OOE_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "OOE_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp SQT>;
+
+            tapping-term-ms = <500>;
+        };
+
+        SAA_behavior: SAA_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SAA_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&kp LEFT_BRACKET>;
+        };
     };
 
     macros {
@@ -126,10 +150,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp D  &kp R  &kp W        &kp B        &kp J     &kp F     &kp U      &kp P       &kp SEMICOLON
-&mt A LEFT_SHIFT  &kp S  &kp H  &kp T        &kp G        &kp Y     &kp N     &kp E      &kp O       &mt I RIGHT_SHIFT
-&mt Z LCTRL       &kp X  &kp M  &kp C        &kp V        &kp K     &kp L     &kp COMMA  &kp PERIOD  &mt EQUAL RCTRL
-                                &lt 5 SPACE  &lt 6 ESC    &htl 3 1  &kp BSPC
+&kp Q             &kp D          &kp R  &kp W        &kp B        &kp J     &kp F     &kp U          &kp P          &kp SEMICOLON
+&mt LEFT_SHIFT A  &SAA_behavior  &kp H  &kp T        &kp G        &kp Y     &kp N     &EAE_behavior  &OOE_behavior  &mt RIGHT_SHIFT I
+&mt LCTRL Z       &kp X          &kp M  &kp C        &kp V        &kp K     &kp L     &kp COMMA      &kp PERIOD     &mt RCTRL ENTER
+                                        &lt 5 SPACE  &lt 6 ESC    &htl 3 1  &kp BSPC
             >;
         };
 
