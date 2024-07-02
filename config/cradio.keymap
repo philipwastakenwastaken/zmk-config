@@ -109,6 +109,16 @@
             layers = <0>;
             bindings = <&kp Q>;
         };
+
+        Bootloader-Left {
+            bindings = <&bootloader>;
+            key-positions = <0 4>;
+        };
+
+        Bootloader-Right {
+            bindings = <&bootloader>;
+            key-positions = <5 9>;
+        };
     };
 
     keymap {
