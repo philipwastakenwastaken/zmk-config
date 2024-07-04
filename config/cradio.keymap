@@ -150,10 +150,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp D          &kp R  &kp W        &kp B        &kp J     &kp F     &kp U          &kp P          &kp SEMICOLON
-&mt LEFT_SHIFT A  &SAA_behavior  &kp H  &kp T        &kp G        &kp Y     &kp N     &EAE_behavior  &OOE_behavior  &mt RIGHT_SHIFT I
-&mt LCTRL Z       &kp X          &kp M  &kp C        &kp V        &kp K     &kp L     &kp COMMA      &kp PERIOD     &mt RCTRL ENTER
-                                        &lt 5 SPACE  &lt 6 ESC    &htl 3 1  &kp BSPC
+&kp Q             &kp W  &kp F  &kp P        &kp B        &kp J     &kp L     &kp U      &kp Y       &kp SEMICOLON
+&mt LEFT_SHIFT A  &kp R  &kp S  &kp T        &kp G        &kp M     &kp N     &kp E      &kp I       &mt RIGHT_SHIFT O
+&mt LCTRL Z       &kp X  &kp C  &kp D        &kp V        &kp K     &kp H     &kp COMMA  &kp PERIOD  &mt RCTRL ENTER
+                                &lt 5 SPACE  &lt 6 ESC    &htl 3 1  &kp BSPC
             >;
         };
 
@@ -177,10 +177,10 @@
 
         number_navigation_layer {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &trans    &trans   &kp PG_DN     &kp UARW      &kp PG_UP  &trans
-&kp N0  &kp N4  &kp N5  &kp N6  &kp N0    &kp END  &kp LARW      &kp DARW      &kp RARW   &kp K_FORWARD
-&trans  &kp N7  &kp N8  &kp N9  &trans    &trans   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP   &trans
-                        &trans  &trans    &trans   &trans
+&trans          &kp N1  &kp N2  &kp N3  &trans    &kp C_VOLUME_UP  &kp PAGE_UP      &trans  &kp HOME  &trans
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0    &kp C_VOLUME_UP  &kp PAGE_DOWN    &trans  &kp END   &trans
+&kp LCTRL       &kp N7  &kp N8  &kp N9  &trans    &trans           &kp PRINTSCREEN  &trans  &trans    &trans
+                                &trans  &trans    &trans           &trans
             >;
         };
 
@@ -197,7 +197,7 @@
             bindings = <
 &trans      &msc SCRL_UP  &kp SPACE  &msc SCRL_DOWN  &trans    &trans  &trans          &mmv MOVE_UP    &trans           &trans
 &kp LSHIFT  &mkp LCLK     &mkp MCLK  &mkp RCLK       &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans      &trans        &kp LALT   &trans          &trans    &trans  &trans          &trans          &trans           &trans
+&kp LCTRL   &trans        &kp LALT   &trans          &trans    &trans  &trans          &trans          &trans           &trans
                                      &trans          &trans    &trans  &kp LCTRL
             >;
         };
