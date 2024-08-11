@@ -152,19 +152,19 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W  &kp F  &kp P        &kp B        &kp J     &kp L     &kp U      &kp Y       &kp SEMICOLON
-&mt LEFT_SHIFT A  &kp R  &kp S  &kp T        &kp G        &kp M     &kp N     &kp E      &kp I       &mt RIGHT_SHIFT O
-&mt LCTRL Z       &kp X  &kp C  &kp D        &kp V        &kp K     &kp H     &kp COMMA  &kp PERIOD  &mt RCTRL ENTER
-                                &lt 5 SPACE  &lt 6 ESC    &htl 3 1  &kp BSPC
+&kp Q             &kp W  &kp F  &kp P        &kp B        &kp J     &kp L            &kp U      &kp Y       &kp SEMICOLON
+&mt LEFT_SHIFT A  &kp R  &kp S  &kp T        &kp G        &kp M     &kp N            &kp E      &kp I       &mt RIGHT_SHIFT O
+&mt LCTRL Z       &kp X  &kp C  &kp D        &kp V        &kp K     &kp H            &kp COMMA  &kp PERIOD  &mt RCTRL ENTER
+                                &lt 5 SPACE  &lt 6 ESC    &htl 3 1  &lt 7 BACKSPACE
             >;
         };
 
         symbol_1_layer {
             bindings = <
-&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR     &trans       &trans     &kp NUBS    &kp UNDER   &kp MINUS  &trans
-&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT    &kp ASTRK  &kp FSLH    &kp CARET   &kp AMPS   &kp PIPE
-&sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans       &trans     &kp RA(N7)  &kp RA(N8)  &tilde     &trans
-                                     &skq LSHIFT  &skq LGUI    &sl 2      &skq LCTRL
+&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR     &trans       &trans     &kp NUBS        &kp UNDER   &kp MINUS  &trans
+&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT    &kp ASTRK  &kp FSLH        &kp CARET   &kp AMPS   &kp PIPE
+&sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans       &trans     &kp RA(N7)      &kp RA(N8)  &tilde     &trans
+                                     &skq LSHIFT  &skq LGUI    &sl 2      &skq BACKSPACE
             >;
         };
 
@@ -213,11 +213,11 @@
             >;
         };
 
-        layer_7 {
+        function_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4
+&trans  &trans  &trans  &trans  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&trans  &trans  &trans  &trans  &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12
                         &trans  &trans    &trans  &trans
             >;
         };
