@@ -200,7 +200,7 @@
 &trans      &msc SCRL_UP  &kp SPACE  &msc SCRL_DOWN  &trans    &trans  &trans          &mmv MOVE_UP    &trans           &trans
 &kp LSHIFT  &mkp LCLK     &mkp MCLK  &mkp RCLK       &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &kp LCTRL   &trans        &kp LALT   &trans          &trans    &trans  &trans          &trans          &trans           &trans
-                                     &trans          &trans    &trans  &kp LCTRL
+                                     &trans          &trans    &trans  &kp BACKSPACE
             >;
         };
 
